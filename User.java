@@ -3,8 +3,6 @@ public class User {
     public User(SportCar Car){
         this.myvehicle = Car;
     }
-
-    
      
     public void StarterOnVehicle(){
         System.out.println("The Car is On");

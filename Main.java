@@ -75,10 +75,8 @@ public class Main {
                     System.out.println("_________________________");
 
                     System.out.print("Colors :" + colors); 
-                    System.out.print("Engine :" + engine);
-
-                    // System.out.print("Colors :"); driver.CarColors();
-                    // System.out.print("Engine :"); driver.CarEngine();
+                    System.out.print("\nEngine :" + engine);
+                    
                 } else if (start.equalsIgnoreCase("0")){
                     System.exit(0);
                 } else {
