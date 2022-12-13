@@ -3,6 +3,8 @@ public class User {
     public User(SportCar Car){
         this.myvehicle = Car;
     }
+
+    
      
     public void StarterOnVehicle(){
         System.out.println("The Car is On");
@@ -11,10 +13,12 @@ public class User {
         System.out.println("The Car is Off");
     }
     public void MaxVolSpeed(){
-        System.out.println("Max speed: "+"250");
+        System.out.println("Max speed: " + myvehicle.engine);
+        myvehicle.engine += 10;
     }
     public void MinVolSpeed(){
-        System.out.println("Min speed: "+"40");
+        System.out.println("Min speed: " + myvehicle.engine);
+        myvehicle.engine -= 10;
     }
     public void CarMoveForward(){
         System.out.println("Move Forward");

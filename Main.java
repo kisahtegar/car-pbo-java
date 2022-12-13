@@ -13,7 +13,9 @@ public class Main {
         
         try (/* input angka pada keyboard */
         Scanner input = new Scanner(System.in)) {
-            String start; 
+            String start;
+            String colors;
+            String engine;
 
             do{
                 /* Tampilan menu utama
@@ -64,8 +66,19 @@ public class Main {
                 } else if (start.equalsIgnoreCase("8")){
                     driver.CarTurnRight();
                 }else if (start.equalsIgnoreCase("9")){
-                    System.out.print("Colors :"); driver.CarColors();
-                    System.out.print("Engine :"); driver.CarEngine();
+                    System.out.print("Choose Color :");
+                    colors = input.nextLine();
+                    
+                    System.out.print("Choose Engine :");
+                    engine = input.nextLine();
+
+                    System.out.println("_________________________");
+
+                    System.out.print("Colors :" + colors); 
+                    System.out.print("Engine :" + engine);
+
+                    // System.out.print("Colors :"); driver.CarColors();
+                    // System.out.print("Engine :"); driver.CarEngine();
                 } else if (start.equalsIgnoreCase("0")){
                     System.exit(0);
                 } else {
